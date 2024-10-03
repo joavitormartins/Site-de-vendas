@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+.container {
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C2120; /* Cor de fundo da top bar */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 50px; /* Ajuste o tamanho do logo */
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.buy-button-top, .buy-button-bottom {
+    background-color: #FF4081; /* Cor do botão */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.buy-button-top:hover, .buy-button-bottom:hover {
+    background-color: #E91E63; /* Cor do botão ao passar o mouse */
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaço entre as imagens */
+}
+
+.image-item {
+    text-align: center; /* Centraliza o texto */
+    background-color: #2C2C2C; /* Cor de fundo das imagens */
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%; /* Altera a largura para 100% */
+    max-width: 200px; /* Largura máxima das imagens */
+}
+
+.image-item img {
+    width: 100%; /* Mantém a largura da imagem dentro do item */
+    border-radius: 5px;
+}
+
+.purchase {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.price-info {
+    margin-top: 10px;
+    font-size: 14px; /* Tamanho da fonte ajustado para leitura fácil */
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 600px) {
+    .image-item {
+        max-width: 100%; /* Largura total em telas pequenas */
+    }
+    
+    .price-info {
+        font-size: 12px; /* Tamanho da fonte ainda menor em telas pequenas */
+    }
+}
